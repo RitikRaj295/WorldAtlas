@@ -1,0 +1,116 @@
+.heroSection{
+    max-width: 70vw;
+    min-height: 50vh;
+    margin: 15px auto;
+       font-family: Arial, Helvetica, sans-serif;
+
+
+    
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 80vw;
+   min-height: 60dvh;
+
+}
+.heroContent{
+   min-height: 80%;
+   width: 55%;
+   justify-content: start;
+   align-items: start;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: .5rem;
+}
+.heroContent h1{
+   font-size: clamp(1.2rem,5vw,2.6rem);
+   font-weight: 900;
+   font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    font-size: clamp(1.2rem,5vw,2.6rem);
+   font-weight: 900;
+   color: rgb(42, 135, 177);
+}
+.paragraph{
+   font-size: clamp(.6rem,3vw,1.2rem);
+   color: rgba(185, 187, 183, 0.648);
+}
+.heroImage{
+   height: 60dvh;
+   width: 60%;
+   display: flex;
+   justify-content: end;
+
+}
+.heroImage img{
+   height:100%;
+   width: 80%;
+   border-radius: 2rem;
+
+}
+
+@media (max-width:850px){
+
+   .heroSection{
+    max-width: 80vw;
+    min-height: 50vh;
+    margin: 5vh auto;
+   font-family: Arial, Helvetica, sans-serif;
+
+
+    
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 80vw;
+   min-height: 60dvh;
+
+}
+.heroContent{
+   min-height: 70%;
+   width: 50%;
+   justify-content: start;
+   align-items: start;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: .5rem;
+   
+}
+.heroContent h1{
+   font-size: clamp(1.5rem,5vw,2.6rem);
+   font-weight: 600;
+   font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    font-size: clamp(1.6rem,5vw,2.6rem);
+   font-weight: 900;
+   color: rgb(42, 135, 177);
+}
+.paragraph{
+   font-size: clamp(.6rem,3vw,1.2rem);
+   color: rgba(185, 187, 183, 0.648);
+}
+.heroImage{
+   height: 50dvh;
+   width: 60%;
+   display: flex;
+   justify-content: end;
+
+}
+.heroImage img{
+   height:60%;
+   width: 100%;
+   border-radius: 2rem;
+
+}
+
+}

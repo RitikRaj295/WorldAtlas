@@ -1,0 +1,61 @@
+.container{
+    min-width: 70vw;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+h2{
+    text-align: center;
+    font-size: clamp(1rem,5vw,2rem);
+}
+.formContainer{
+    min-width: 40vw;
+    margin: auto;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+
+
+}
+.inpt{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: gray;
+    box-shadow: 2px 2px 10px gray;
+
+}
+.txt{
+    max-width: 70vw;
+    min-width: 40vw;
+    max-height: 20vh;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: scroll;
+    scrollbar-width: none;
+    resize: none;
+    box-shadow: 2px 2px 10px gray;
+}
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px white;
+    cursor: pointer;
+    font-size: clamp(.7rem,2vw,1.3rem);
+    font-weight: 600;
+    color: black;
+    background-color: rgb(13, 96, 191);
+    box-shadow: inset 2px 2px 10px black;
+    &:active{
+        background-color: rgb(19, 35, 211);
+    box-shadow: inset 5px 5px 35px black;
+
+    }
+}

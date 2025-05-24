@@ -1,0 +1,142 @@
+.details{
+    height: 70dvh;
+    width: 70dvw;
+    overflow: hidden;
+    margin: auto;
+    background-color: rgba(62, 82, 132, 0.6);
+}
+.grid{
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(32, 95, 95);
+}
+.imageBox{
+    width: 70%;
+    height: 30vh;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.imageBox img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+.data{
+    display: flex;
+    
+    padding: clamp(2vh,3vh,5vh);
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: clamp(10px,20px,25px);
+}
+.data h1{
+    font-size: clamp(.9rem,3vw,1.6rem);
+    font-weight: 700;
+    color: azure;
+    
+
+}
+.data span{
+    font-size: clamp(.4rem,2vw,.9rem);
+    color: rgba(220, 220, 220, 0.527);
+    margin-right: 10px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+  
+}
+.button{
+    padding:5px clamp(8px,3vw,15px);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px rgba(223, 218, 218, 0.443);
+    &:active{
+            box-shadow:  4px 4px 5px rgba(15, 124, 214, 0.443);
+
+    }
+}
+
+.loader{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:850px){
+    .details{
+    height: auto;
+    width:80dvw;
+    margin: auto;
+    background-color: transparent;
+}
+.grid{
+    width: 80dvw;
+    height: auto;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr ;
+    background-color: transparent;
+
+}
+.imageBox{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.imageBox img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.data{
+    display: flex;
+    height: 100%;
+    padding: clamp(1vh,3vh,5vh);
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: clamp(5px,15px,25px);
+}
+.data h1{
+    font-size: clamp(1.5rem,3vw,1.7rem);
+    font-weight: 800;
+    color: rgb(68, 212, 114);
+    
+
+}
+.data p{
+    font-size: clamp(.9rem,2vw,1.5rem);
+}
+.data span{
+    font-size: clamp(.68rem,2vw,.9rem);
+    color: rgba(220, 220, 220, 0.527);
+    margin-right: 10px;
+}
+.buttons{
+    height: 5vh;
+        margin-top: 5px;
+}
+.button{
+   width: 100%;
+   margin-right: 10vw;
+   font-size: 16px;
+}
+
+
+}
+

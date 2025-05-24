@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+   padding: 2px 10px;
+   border: 1px solid gray;
+   box-shadow: inset 1px 1px 6px gray;
+   border-radius: .4rem;
+   cursor: pointer;
+   width: 60vw;
+}
+
+select{
+   padding: 2px 10px;
+   border: 1px solid gray;
+   box-shadow: inset 1px 1px 6px gray;
+   border-radius: .4rem;
+   cursor: pointer;
+   width: 10vw;
+   margin-left: 10px;
+}
+
+@media (max-width:850px){
+   .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+   padding: 2px 10px;
+   border: 1px solid gray;
+   box-shadow: inset 1px 1px 6px gray;
+   border-radius: .4rem;
+   cursor: pointer;
+   width: 40vw;
+}
+
+select{
+   padding: 2px 10px;
+   border: 1px solid gray;
+   box-shadow: inset 1px 1px 6px gray;
+   border-radius: .4rem;
+   cursor: pointer;
+   width: 20vw;
+   margin-left: 10px;
+}
+
+}

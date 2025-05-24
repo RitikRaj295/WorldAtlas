@@ -1,0 +1,45 @@
+.outerContainer{
+   margin: 5vh auto;
+   display: flex;
+   flex-direction: column;
+   width: 70vw; 
+   gap: 4dvh;
+}
+.container{
+height: 85vh;
+width: 70vw;
+margin: auto;
+/* border: 1px solid white; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+overflow: scroll;
+scrollbar-width: none;
+}
+
+.loader{
+   display: flex;
+   height: 70vh;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+}
+
+@media (max-width:850px) {
+.outerContainer{
+   margin: 2vh auto;
+   display: flex;
+   flex-direction: column;
+   width: 80vw; 
+   gap: 4dvh;
+}
+.container{
+height: 85vh;
+width: 80vw;
+margin: auto;
+/* border: 1px solid white; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+overflow: scroll;
+scrollbar-width: none;
+}
+}
