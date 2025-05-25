@@ -1,12 +1,14 @@
-import React from 'react';
+import React,{Suspense} from 'react';
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
-import Home from './pages/Home';
-import Country from './pages/Country';
 import Contact from './pages/Contact';
-import About from './pages/About'
 import AppLayout from './components/Layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
-import CountryDetails from './pages/CountryDetails';
+
+const CountryDetails=React.lazy(()=>import('./pages/CountryDetails'))
+const Country=React.lazy(()=> import('./pages/Country'))
+const Home=React.lazy(()=> import('./pages/Home'))
+const About=React.lazy(()=>import('./pages/About'))
+
 import './App.css';
 
 const App = () => {
@@ -20,15 +22,18 @@ const App = () => {
         children:[
           {
             path:'/',
-            element:<Home/>
+            element:(<Suspense fallback={<p className='suspenseMessage'>Home Page Loading..</p>}>
+            <Home/></Suspense>)
           },
           {
             path:'about',
-            element:<About/>
+            element:(<Suspense fallback={<p className='suspenseMessage'>About Page Loading..</p>}>
+            <About/></Suspense>)
           },
           {
             path:'country',
-            element:<Country/>
+            element:(<Suspense fallback={<p className='suspenseMessage'>Country Page Loading..</p>}>
+            <Country/></Suspense>)
           },
           {
             path:'contact',
@@ -36,7 +41,10 @@ const App = () => {
           },
            {
             path:'country/:id',
-            element:<CountryDetails/>
+            element:( 
+            <Suspense fallback={<p className="suspenseMessage"> Details Loading...</p>}>
+            <CountryDetails/>
+            </Suspense>)
           },
         
           

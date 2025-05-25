@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className={style.heroContent}>
         <h1 className={style.headingXl}>Navigate the <span>Globe</span>, Learn Beyond Borders.</h1>
         <p className={style.paragraph}>Discover the history, culture and beauty of every nation. Sort,search and filter through country and find the details you need.</p>
-       <NavLink to={"/country"}><button>Start Exploring<FaLongArrowAltRight style={{ fontSize: "1rem" }} />      </button></NavLink> 
+       <NavLink to={"/country"}><button>Start Exploring<FaLongArrowAltRight style={{ fontSize: ".6rem" ,marginLeft:"5px"}} />      </button></NavLink> 
       </div>
       <div className={style.heroImage}>
         <img src="/images/img3.png" alt="world atlas image" />

@@ -1,7 +1,5 @@
 .container{
-    max-width: 70vw;
-    min-height: 78vh;
-    max-height: 80vh;
+   width: 70vw;
     margin: auto;
     margin-top: 3vh;
     display: flex;
@@ -76,4 +74,86 @@
       
     
     
+}
+
+@media (max-width:850px){
+    .container{
+    width: 80dvw;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    user-select: none;
+
+}
+
+.title{
+    text-align: center;
+    font-size: clamp(1rem,3vw,1.6);
+    font-weight: 700;
+    color: rgb(108, 147, 190);
+    font-family: Arial;
+    position:sticky;
+    top: 0px;
+}
+
+.cardCollection{
+    height: 90dvh;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-gap:15px;
+    overflow: hidden;
+    padding: 2px;
+
+
+}
+
+.card{
+
+    border: 1px solid gray;
+    padding: 20px 25px;
+    border-radius: 10px 2rem;
+    box-shadow: inset 2px 2px 8px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+     flex-grow: 1;
+     flex-basis: 0;
+     overflow: hidden;
+     gap: 5px;
+
+ &:hover{
+        box-shadow: inset 2px 2px 15px rgb(33, 213, 138);
+      
+     }
+}
+.card p{
+    font-size: clamp(.7rem,3vw,.8rem);
+
+}
+
+.card p  span{
+    font-size: clamp(.6rem,2.6vw,.77rem);
+    font-weight: bold;
+    margin-right: 4px;
+    color: gray;
+    
+}
+.cardTitle{
+    color: rgb(61, 220, 122);
+    font-size: clamp(.9rem,3vw,1.1rem);
+    opacity: .9;
+      
+    
+    
+}
 }

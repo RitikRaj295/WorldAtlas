@@ -118,6 +118,7 @@ nav ul{
     position: absolute;
     top: 10.5vh;
     right: 10vw;
+    z-index: 900;
     
 }
 header{

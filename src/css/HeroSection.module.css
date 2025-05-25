@@ -4,7 +4,7 @@
     margin: 15px auto;
        font-family: Arial, Helvetica, sans-serif;
 
-
+    user-select: none;
     
 }
 .container{
@@ -45,12 +45,21 @@ span{
    width: 60%;
    display: flex;
    justify-content: end;
+       user-select: none;
+
 
 }
 .heroImage img{
    height:100%;
    width: 80%;
    border-radius: 2rem;
+   cursor: pointer;
+      &:hover{
+      transform: scale(1.1);
+      transition: 5s;
+   }
+ 
+
 
 }
 
@@ -61,6 +70,7 @@ span{
     min-height: 50vh;
     margin: 5vh auto;
    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 
 
     
@@ -104,13 +114,35 @@ span{
    width: 60%;
    display: flex;
    justify-content: end;
+        cursor: pointer;
+      &:hover{
+      transform: scale(1.1);
+      transition: 5s;
+             user-select: none;
+
+   }
+  
+
 
 }
 .heroImage img{
    height:60%;
    width: 100%;
    border-radius: 2rem;
+    user-select: none;
+   
 
+}
+.heroContent button{
+   font-size: clamp(.6rem,2vw,1.2rem);
+   height: 5dvh;
+   width: 25dvw;
+   padding: 5px 5px;
+   border: 2px solid gray;
+   border-radius: 1rem;
+   text-align: center;
+   box-shadow: inset 1px 1px 4px gray;
+   cursor: pointer;
 }
 
 }

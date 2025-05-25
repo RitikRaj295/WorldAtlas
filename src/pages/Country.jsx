@@ -1,9 +1,11 @@
+import React,{Suspense} from 'react';
 import { useState, useTransition } from 'react';
 import {CountryData} from '../api/CountryData';
 import { useEffect } from 'react';
 import Loader from '../components/UI/Loader';
-import CountryCard from '../components/Layout/CountryCard';
 import SearchFilter from '../components/UI/SearchFilter';
+const CountryCard= React.lazy(()=> import('../components/Layout/CountryCard'))
+
 
 import style from '../css/Country.module.css';
 
@@ -25,7 +27,6 @@ useEffect(()=>{
  </div>)
 
  const searchCountry=(country)=>{
-  console.log(country)
   if(search){
      return country.name.common.toLowerCase().includes(search.toLowerCase())
   }
@@ -50,8 +51,9 @@ const filterCountries = countries.filter((country)=> searchCountry(country) && f
         filterCountries.map((country,index)=>{
           // console.log(country.name.common)
           return(
+            <Suspense fallback={<p>Loading Data..</p>}> 
             <CountryCard country={country} key={index}/>
-            
+            </Suspense>
           )
         })
       }

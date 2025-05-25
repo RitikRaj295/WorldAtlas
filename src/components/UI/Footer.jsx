@@ -14,7 +14,7 @@ const Footer = () => {
  }  
 
   return (
-   <footer>
+   <footer className={style.footer}>
     <div className={style.container}>
     <div className={style.nextContainer}>
       {footerData.map((val,idx)=>{
