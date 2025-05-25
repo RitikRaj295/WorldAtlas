@@ -134,12 +134,12 @@ span{
 
 }
 .heroContent button{
-   font-size: clamp(.6rem,2vw,1.2rem);
+   font-size: clamp(.45rem,2vw,1.2rem);
    height: 5dvh;
    width: 25dvw;
    padding: 5px 5px;
    border: 2px solid gray;
-   border-radius: 1rem;
+   border-radius: .5rem;
    text-align: center;
    box-shadow: inset 1px 1px 4px gray;
    cursor: pointer;
