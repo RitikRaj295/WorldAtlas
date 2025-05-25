@@ -1,0 +1,15 @@
+.container{
+    max-height: 100dvh;
+    max-width: 100dvw;
+    
+}
+
+@media(max-width:850px){
+  .container{
+    max-height: 100dvh;
+    max-width: 100dvw;
+       overflow-x: hidden;
+    scroll-behavior: none;
+}
+}
+
