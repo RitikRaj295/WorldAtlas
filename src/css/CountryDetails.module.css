@@ -101,7 +101,7 @@
     background-color: transparent;
 }
 .grid{
-    width: 80dvw;
+    width: 100%;
     height: auto;
     margin: 5vh auto;
     display: grid;
