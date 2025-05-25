@@ -2,7 +2,7 @@
 .card{
     border: 1px solid rgb(206, 230, 206);
     border-radius:  2rem;
-    height: 55dvh;
+    height: 58dvh;
     width: 15dvw;
     display: grid;
     justify-content: center;
